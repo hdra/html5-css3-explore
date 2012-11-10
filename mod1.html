@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <section style="margin-left:12px;margin-top:45px;">
+        <hgroup>
+            <h1>Markup</h1>
+            <h2>Demo</h2>
+        </hgroup>
+        <p>Favorites:</p>
+        <form>
+            <input id="favurl" type="url" required placeholder="http://www.google.com"/>
+            <input type="submit" value="Save URL"/>
+        </form>
+        <p>
+            <h2>Audio Tags</h2>
+            <audio src="some.mp3" id="music" controls></audio>
+            <audio controls autoplay loop preload="auto">
+                <source src="some.mp3"/>
+                <source src="some.ogg"/>
+                Your Browser Doesn't support Audio
+            </audio>
+        </p>
+        <p>
+            <h2>Video Tags</h2>
+            <video src="some.mp4" controls poster="some.jpg" ></video>
+            <video controls autoplay loop muted>
+                <source src="some.webm"/>
+                <source src="some.mp4"/>
+                Your browser does not support video
+            </video>
+            <video width="400" height="300" src="some.mp4"></video>
+            <video preload="none" poster="some.jpg" width="400" height="300" controls>
+                <source src="some.mp4"/>
+                <source src="some.webm"/>
+                Your browser does not support video
+            </video>
+        </p>
+        <p>
+            <h2>Canvas</h2>
+            <canvas id="can" width="200" height="200">
+                Your browser does not support canvas
+            </canvas>
+            <script type="text/javascript">
+                var canvas= document.getElementById("can");
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "rgb(0,0,255)";
+                ctx.fillRect(10,10,180,180);
+            </script>
+        </p>
+        <p>
+            <h2>SVG</h2>
+            <svg id="vector" width="200" height="200">
+                <rect fill="rgb(0,0,255)"
+                      x="10"
+                      y="10"
+                      width="180"
+                      heigth="180"/>
+            </svg>
+        </p>
+    </section>
+</body>
+</html>
