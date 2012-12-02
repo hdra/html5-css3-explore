@@ -1,0 +1,2 @@
+## HTML5 & CSS 3 Exploration Tools ##
+Just a random repository I made to play around with HTML5 and CSS3 related stuffs around the web that I found. Might function as a code snippets repository as well.
